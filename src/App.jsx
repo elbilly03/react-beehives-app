@@ -1,46 +1,15 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import Arnia from './components/arnia.jsx'
 
 function App() {
   return (
-    <div className="mx-auto max-w-7xl p-8 text-center">
-      <div className="flex justify-center">
-        <a
-          href="https://vite.dev"
-          target="_blank"
-          className="p-6 transition hover:drop-shadow-[0_0_2em_#646cffaa]"
-        >
-          <img src={viteLogo} alt="Vite logo" className="h-24" />
-        </a>
-
-        <a
-          href="https://react.dev"
-          target="_blank"
-          className="p-6 animate-spin-slow transition hover:drop-shadow-[0_0_2em_#61dafbaa]"
-        >
-          <img src={reactLogo} alt="React logo" className="h-24" />
-        </a>
-      </div>
-
-      <h1 className="my-6 text-4xl font-bold">Vite + React</h1>
-
-      <div className="p-8">
-        <button className="rounded-lg border border-gray-300 px-4 py-2 font-medium transition hover:border-indigo-500 hover:text-indigo-500">
-          Ready to go 🚀
-        </button>
-
-        <p className="mt-4 text-sm">
-          Edit{" "}
-          <code className="rounded bg-gray-100 px-1 py-0.5">src/App.jsx</code>{" "}
-          and save to test HMR
-        </p>
-      </div>
-
-      <p className="text-gray-400">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="flex flex-col gap-10 text-center">
+      <Arnia nome="Arnia Gialla" posizione="43.459..., 12.239..." />
+      <Arnia nome="Arnia Rossa" posizione="45.459..., 12.239..." />
+      <Arnia nome="Arnia Blu" posizione="47.459..., 12.239..." />
     </div>
-  );
+  )
 }
 
 export default App;
